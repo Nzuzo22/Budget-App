@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Budget-App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="budget__numbers">
+            <div class="number" id="earned">
+                <small>Money Earned</small>
+                <div class="amount__container">
+                    <p id="earned__symbol">R</p>
+                    <span id="amount__earned"></span>
+                </div>
+            </div>
+            <div class="number" id="available">
+                <small>Money Available</small>
+                <div class="amount__container">
+                    <p>R</p>
+                    <span id="amount__available"></span>
+                </div>
+            </div>
+            <div class="number" id="spent">
+                <small>Money Spent</small>
+                <div class="amount__container">
+                    <p id="spent__symbol">R</p>
+                    <span id="amount__spent"></span>
+                </div>
+            </div>
+        </div>
+        <div class="input__area">
+            <input type="text" name="" id="description" placeholder="Description">
+            <input type="number" name="" id="amount" placeholder="amount">
+        </div>
+
+        <div class="buttons__area">
+            <button id="add__income">Add Income</button>
+            <button id="add__expense">Add Expense</button>
+        </div>
+
+        <div class="items__container">
+            <div id="income__container" class="container">
+                <h2>Income</h2>
+                <!--
+                <div class="item income">
+                    <h4>Stuff sold</h4>
+                    <div class="item__income">
+                        <p class="symbol">R</p>
+                        <span class="income__amount">200</span>
+                    </div>
+                    <i class="far fa-trash-alt"></i>
+                </div> -->
+            </div>
+
+            <div id="expenses__container" class="container">
+                <h2>Expenses</h2>
+                <!---
+                <div class="item expense">
+                    <h4>Stuff bought</h4>
+                    <div class="item__expense">
+                        <p class="symbol">R</p>
+                        <span class="expense__amount">200</span>
+                    </div>
+                    <i class="far fa-trash-alt"></i>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
